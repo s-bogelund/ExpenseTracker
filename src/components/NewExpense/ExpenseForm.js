@@ -77,7 +77,9 @@ const ExpenseForm = (props) => {
                     </div>
                 </div>
                 <div className="new-expense__actions">
-                    <button onClick={addExpenseToggleHandler}>Fortryd</button>
+                    <button onMouseDown={addExpenseToggleHandler}>
+                        Fortryd
+                    </button>
                     <button type="submit">Tilføj Udgift</button>
                 </div>
             </form>
@@ -91,7 +93,7 @@ const ExpenseForm = (props) => {
                 type="submit"
                 onClick={addExpenseToggleHandler}
             >
-                Add Expense
+                Tilføj ny Udgift
             </button>
         );
     };

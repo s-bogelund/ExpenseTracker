@@ -31,7 +31,7 @@ export const myData = [
     },
     {
         id: "e6",
-        title: "Vinduesudkiftning",
+        title: "Vinduesudskiftning",
         amount: 2324,
         date: new Date(2021, 4, 18),
     },
@@ -42,21 +42,45 @@ export const myData = [
         date: new Date(2022, 5, 3),
     },
     {
-        "id": "e8",
-        "title": "PC Skærm",
-        "amount": 2132,
-        "date": new Date(2022, 1, 18)
+        id: "e8",
+        title: "PC Skærm",
+        amount: 2132,
+        date: new Date(2022, 1, 18),
     },
     {
-        "id": "e9",
-        "title": "Verdens mindste violin",
-        "amount": 1294,
-        "date": new Date(2022, 1, 8)
+        id: "e9",
+        title: "Verdens mindste violin",
+        amount: 1294,
+        date: new Date(2022, 1, 8),
     },
     {
-        "id": "e10",
+        id: "e10",
+        title: "Filur-is",
+        amount: 834,
+        date: new Date(2022, 11, 24),
+    },
+    {
+        id: "e11",
+        title: "Kanelstænger",
+        amount: 2121,
+        date: new Date(2022, 8, 5),
+    },
+    {
+        id: "e12",
+        title: "Halm",
+        amount: 199.95,
+        date: new Date(2022, 8, 21),
+    },
+    {
+        id: "e13",
+        title: "Slagbor",
+        amount: 1249,
+        date: new Date(2022, 12, 18),
+    },
+    {
+        "id": "e14",
         "title": "Tudekiks",
         "amount": 294,
         "date": new Date(2022, 2, 2)
-    }
+    },
 ];
