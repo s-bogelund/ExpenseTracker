@@ -42,3 +42,19 @@
 .new-expense .default-button {
     margin: 0;
 }
+
+@media only screen and (max-width:420px){
+    
+    
+
+    .new-expense button{
+        font-size: 14px;
+        font-weight: bold;
+        box-sizing: border-box;
+        flex-wrap: nowrap;
+        height: 50px;
+        width: auto;
+        padding: 0.5rem;
+        margin: .5rem;
+    }
+}

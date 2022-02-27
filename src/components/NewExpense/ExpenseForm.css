@@ -2,9 +2,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1.2rem 4rem;
-    margin: 1% 8% 1% 8%;
+    margin: 1% 3% 1% 3%;
     text-align: left;
-    flex: 0 4 100%;
+    flex: 0 1 100%;
     justify-content: space-between;
     max-width: 100%;
 }
@@ -21,10 +21,36 @@
     padding: 0.6rem;
     border-radius: 9px;
     border: 1px solid rgb(76, 71, 71);
-    max-width: 400px;
-    min-width: 250px;
+    width: 325px;
 }
 
 .new-expense__actions {
     text-align: right;
+}
+
+@media only screen and (max-width: 430px) {
+    div.new-expense {
+        width: auto;
+        margin-right: 11px;
+        margin-left: 11px;
+    }
+    .new-expense__control input {
+        width: auto;
+        max-width: 120px;
+        align-self: center;
+    }
+
+    .new-expense__actions {
+        display: inline-block;
+        width: 250px;
+        max-width: 250px;
+        justify-content: space-between;
+        text-align: center;
+        align-items: space-between;
+    }
+
+    .new-expense__controls {
+        justify-content: center;
+        align-items: center;
+    }
 }
