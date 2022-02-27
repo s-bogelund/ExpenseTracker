@@ -21,7 +21,7 @@
     padding: 0.6rem;
     border-radius: 9px;
     border: 1px solid rgb(76, 71, 71);
-    width: 325px;
+    width: 310px;
 }
 
 .new-expense__actions {
@@ -35,8 +35,9 @@
         margin-left: 11px;
     }
     .new-expense__control input {
-        width: auto;
-        max-width: 120px;
+        display: block;
+        min-width: 240px;
+        max-width: 320px;
         align-self: center;
     }
 
