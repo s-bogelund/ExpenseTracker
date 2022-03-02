@@ -1,24 +1,72 @@
 .expenses-filter {
-  color: white;
-  padding: 0 1rem;
+	color: white;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 .expenses-filter__control {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  margin: 1rem 0;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: right;
+	margin: 1rem 0;
+}
+
+.expenses-filter-left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.expenses-filter-left button {
+	height: 3em;
+	width: 45%;
+	font: inherit;
+	cursor: pointer;
+	padding: 1rem 1rem;
+	border: 1px solid white;
+	background-color: #40005d;
+	color: white;
+	border-radius: 12px;
+	margin-bottom: 0.4rem;
 }
 
 .expenses-filter label {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+	/* margin: 4rem; */
+	font-weight: bold;
 }
 
 .expenses-filter select {
-  font: inherit;
-  padding: 0.5rem 3rem;
-  font-weight: bold;
-  border-radius: 6px;
+	font: inherit;
+	padding: 0.5rem 3rem;
+	font-weight: bold;
+	font-size: 0.9rem;
+	border-radius: 6px;
+	width: auto;
+	max-width: 40%;
+	margin-left: 2rem;
+}
+
+@media (max-width: 490px) {
+	.expenses-filter select {
+		min-height: 2em;
+		min-width: 4.2em;
+		max-width: 45%;
+		font-size: 0.9rem;
+		margin-left: 0.8rem;
+		padding: 0;
+	}
+
+	.expenses-filter {
+		padding: 0rem;
+	}
+
+	.expenses-filter label {
+		align-items: center;
+		display: inline-block;
+		width: 4em;
+		font-size: 0.9rem;
+		margin: 0;
+	}
 }
