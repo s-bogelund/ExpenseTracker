@@ -3,7 +3,7 @@ import ExpensesList from "./ExpensesList";
 import Card from "../UI/Card";
 import ExpensesFilter from "./ExpensesFilter";
 import "./Expenses.css";
-import "./ExpensesList.css"
+import "./ExpensesList.css";
 import ExpensesChart from "./ExpensesChart";
 
 const Expenses = (props) => {
@@ -18,25 +18,32 @@ const Expenses = (props) => {
 		setFilteredYear(selectedYear);
 	};
 
-    const clearListHandler = () => {
-        console.log(`hello from expenses`)
-        props.onClearList();
-    }
-        return (
-            <div>
-                <Card className="expenses">
-                    <ExpensesFilter
-                        selected={filteredYear}
-                        onChangeFilter={filterChangeHandler}
-                        onClearList={clearListHandler}
-                    />
-                    <ExpensesChart expenses={filteredExpenses} />
-                    <ExpensesList items={filteredExpenses} />
-                </Card>
-            </div>
-        )
-    
+	const clearListHandler = () => {
+		console.log(`hello from expenses`);
+		props.onClearList();
+	};
 
+	const itemDeleteHandler = (title, amount) => {
+		console.log(`${title} and ${amount}`);
+		props.onDeleteItem(title, amount);
+	};
+
+	return (
+		<div>
+			<Card className="expenses">
+				<ExpensesFilter
+					selected={filteredYear}
+					onChangeFilter={filterChangeHandler}
+					onClearList={clearListHandler}
+				/>
+				<ExpensesChart expenses={filteredExpenses} />
+				<ExpensesList
+					items={filteredExpenses}
+					onDeleteItem={itemDeleteHandler}
+				/>
+			</Card>
+		</div>
+	);
 };
 
 export default Expenses;
