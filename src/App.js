@@ -13,10 +13,15 @@ const App = () => {
         });
     };
 
+    const clearListHandler = (expense) => {
+        console.log(`hello from app`)
+        setExpenses([]);
+    }
+
     return (
         <Card>
             <NewExpense onAddExpense={addExpenseHandler} />
-            <Expenses items={expenses} />
+            <Expenses items={expenses} onClearList={clearListHandler}/>
         </Card>
     );
 };

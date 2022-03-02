@@ -11,22 +11,26 @@
 	align-items: center;
 	justify-content: right;
 	margin: 1rem 0;
+	padding-right: 1rem;
+	font-size: 1.3rem;
 }
 
 .expenses-filter-left {
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 	align-items: center;
+	padding-left: 1rem;
 }
 
-.expenses-filter-left button {
+.delete-list-button {
+	grid-row: 1;
 	height: 3em;
 	width: 45%;
 	font: inherit;
+	font-weight: bold;
 	cursor: pointer;
-	padding: 1rem 1rem;
 	border: 1px solid white;
-	background-color: #40005d;
+	background-color: #2a063b;
 	color: white;
 	border-radius: 12px;
 	margin-bottom: 0.4rem;
@@ -39,12 +43,12 @@
 
 .expenses-filter select {
 	font: inherit;
-	padding: 0.5rem 3rem;
+	padding: 0.5rem 1.5rem;
 	font-weight: bold;
-	font-size: 0.9rem;
+	font-size: 1.2rem;
 	border-radius: 6px;
-	width: auto;
-	max-width: 40%;
+	width: 9em;
+	max-width: 45%;
 	margin-left: 2rem;
 }
 
@@ -63,10 +67,18 @@
 	}
 
 	.expenses-filter label {
-		align-items: center;
 		display: inline-block;
 		width: 4em;
-		font-size: 0.9rem;
+		font-size: 0.8rem;
 		margin: 0;
+	}
+
+	.expenses-filter__control {
+	 margin: 0;
+	}
+
+	.expenses-filter-left button {
+		width: 95%;
+		font-size: .8rem;
 	}
 }
