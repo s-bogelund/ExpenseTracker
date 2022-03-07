@@ -21,9 +21,9 @@ const App = () => {
 	const deleteItemHandler = (title, amount) => {
 		console.log(`${title} ${typeof amount} <------- id`);
 		expenses.forEach((expense) => {
-            if(expense.amount === amount)
-                setExpenses(expenses.filter(e => e.title !== title));
-        ;})
+			if (expense.amount === amount)
+				setExpenses(expenses.filter((e) => e.title !== title));
+		});
 	};
 
 	return (
